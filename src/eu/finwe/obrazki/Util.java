@@ -670,9 +670,34 @@ public class Util {
         }
         
     
+      static private class FiltrPusty extends Filtr {
         
+          private final typFiltra typ;
+          
+          public FiltrPusty (typFiltra typ)
+          {
+              this.typ = typ;
+          }
+
+            @Override
+            public BufferedImage filter(BufferedImage src, BufferedImage dest) {
+                throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+            }
+
+            @Override
+            public Rectangle2D getBounds2D(BufferedImage src) {
+                throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+            }
+
+            @Override
+            public Point2D getPoint2D(Point2D srcPt, Point2D dstPt) {
+                throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+            }
+          
+    }  
         
     }
+    
     
     
     /* Testowanie wybranych metod;
